@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class FormProducto
     Inherits System.Windows.Forms.Form
 
     'Form reemplaza a Dispose para limpiar la lista de componentes.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class FormProducto
     'NOTA: el Diseñador de Windows Forms necesita el siguiente procedimiento
     'Se puede modificar usando el Diseñador de Windows Forms.  
     'No lo modifique con el editor de código.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -39,6 +39,8 @@ Partial Class FormProducto
         Me.btnCerrar = New System.Windows.Forms.Button()
         Me.btnMostar = New System.Windows.Forms.Button()
         Me.btnGuardar = New System.Windows.Forms.Button()
+        Me.btnCanselar = New System.Windows.Forms.Button()
+        Me.btnAgrgarPedido = New System.Windows.Forms.Button()
         CType(Me.dgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -117,36 +119,36 @@ Partial Class FormProducto
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(256, 197)
+        Me.btnEliminar.Location = New System.Drawing.Point(422, 197)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(96, 30)
+        Me.btnEliminar.Size = New System.Drawing.Size(191, 30)
         Me.btnEliminar.TabIndex = 21
         Me.btnEliminar.Text = "Eliminar"
         Me.btnEliminar.UseVisualStyleBackColor = True
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(256, 165)
+        Me.btnNuevo.Location = New System.Drawing.Point(225, 161)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(96, 30)
+        Me.btnNuevo.Size = New System.Drawing.Size(191, 30)
         Me.btnNuevo.TabIndex = 20
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(84, 197)
+        Me.btnModificar.Location = New System.Drawing.Point(422, 161)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(96, 30)
+        Me.btnModificar.Size = New System.Drawing.Size(191, 30)
         Me.btnModificar.TabIndex = 19
         Me.btnModificar.Text = "Modificar"
         Me.btnModificar.UseVisualStyleBackColor = True
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(84, 165)
+        Me.btnBuscar.Location = New System.Drawing.Point(225, 196)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(96, 30)
+        Me.btnBuscar.Size = New System.Drawing.Size(191, 30)
         Me.btnBuscar.TabIndex = 18
         Me.btnBuscar.Text = "Buscar"
         Me.btnBuscar.UseVisualStyleBackColor = True
@@ -156,44 +158,66 @@ Partial Class FormProducto
         Me.dgvListado.AllowUserToAddRows = False
         Me.dgvListado.AllowUserToDeleteRows = False
         Me.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListado.Location = New System.Drawing.Point(28, 242)
+        Me.dgvListado.Location = New System.Drawing.Point(76, 232)
         Me.dgvListado.Name = "dgvListado"
         Me.dgvListado.ReadOnly = True
-        Me.dgvListado.Size = New System.Drawing.Size(612, 195)
+        Me.dgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvListado.Size = New System.Drawing.Size(484, 195)
         Me.dgvListado.TabIndex = 22
         '
         'btnCerrar
         '
-        Me.btnCerrar.Location = New System.Drawing.Point(200, 454)
+        Me.btnCerrar.Location = New System.Drawing.Point(369, 433)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(96, 30)
+        Me.btnCerrar.Size = New System.Drawing.Size(191, 30)
         Me.btnCerrar.TabIndex = 24
         Me.btnCerrar.Text = "Cerrar"
         Me.btnCerrar.UseVisualStyleBackColor = True
         '
         'btnMostar
         '
-        Me.btnMostar.Location = New System.Drawing.Point(28, 454)
+        Me.btnMostar.Location = New System.Drawing.Point(76, 433)
         Me.btnMostar.Name = "btnMostar"
-        Me.btnMostar.Size = New System.Drawing.Size(96, 30)
+        Me.btnMostar.Size = New System.Drawing.Size(191, 30)
         Me.btnMostar.TabIndex = 23
         Me.btnMostar.Text = "Mostar"
         Me.btnMostar.UseVisualStyleBackColor = True
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(409, 165)
+        Me.btnGuardar.Location = New System.Drawing.Point(28, 161)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(94, 30)
+        Me.btnGuardar.Size = New System.Drawing.Size(191, 30)
         Me.btnGuardar.TabIndex = 25
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
+        '
+        'btnCanselar
+        '
+        Me.btnCanselar.Location = New System.Drawing.Point(28, 196)
+        Me.btnCanselar.Name = "btnCanselar"
+        Me.btnCanselar.Size = New System.Drawing.Size(191, 29)
+        Me.btnCanselar.TabIndex = 28
+        Me.btnCanselar.Text = "Canselar"
+        Me.btnCanselar.UseVisualStyleBackColor = True
+        '
+        'btnAgrgarPedido
+        '
+        Me.btnAgrgarPedido.Location = New System.Drawing.Point(449, 7)
+        Me.btnAgrgarPedido.Name = "btnAgrgarPedido"
+        Me.btnAgrgarPedido.Size = New System.Drawing.Size(179, 35)
+        Me.btnAgrgarPedido.TabIndex = 29
+        Me.btnAgrgarPedido.Text = "Agregar pedido"
+        Me.btnAgrgarPedido.UseVisualStyleBackColor = True
+        Me.btnAgrgarPedido.Visible = False
         '
         'FormProducto
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(652, 496)
+        Me.ClientSize = New System.Drawing.Size(652, 475)
+        Me.Controls.Add(Me.btnAgrgarPedido)
+        Me.Controls.Add(Me.btnCanselar)
         Me.Controls.Add(Me.btnGuardar)
         Me.Controls.Add(Me.btnCerrar)
         Me.Controls.Add(Me.btnMostar)
@@ -214,6 +238,7 @@ Partial Class FormProducto
         Me.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
         Me.Name = "FormProducto"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormProducto"
         CType(Me.dgvListado, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -238,4 +263,6 @@ Partial Class FormProducto
     Friend WithEvents btnCerrar As Button
     Friend WithEvents btnMostar As Button
     Friend WithEvents btnGuardar As Button
+    Friend WithEvents btnCanselar As Button
+    Friend WithEvents btnAgrgarPedido As Button
 End Class

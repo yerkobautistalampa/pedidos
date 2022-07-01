@@ -89,6 +89,12 @@
     <Compile Include="Formularios\FormCliente.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Formularios\FormMenu.Designer.vb">
+      <DependentUpon>FormMenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FormMenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Formularios\FormPedido.Designer.vb">
       <DependentUpon>FormPedido.vb</DependentUpon>
     </Compile>
@@ -123,6 +129,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormCliente.resx">
       <DependentUpon>FormCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FormMenu.resx">
+      <DependentUpon>FormMenu.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FormPedido.resx">
       <DependentUpon>FormPedido.vb</DependentUpon>

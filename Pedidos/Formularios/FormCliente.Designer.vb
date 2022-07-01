@@ -49,6 +49,7 @@ Partial Class FormCliente
         Me.btnGuardar = New System.Windows.Forms.Button()
         Me.btnCanselar = New System.Windows.Forms.Button()
         Me.btnModificarn = New System.Windows.Forms.Button()
+        Me.btnAgrgarPedido = New System.Windows.Forms.Button()
         CType(Me.dgvListado, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -74,35 +75,35 @@ Partial Class FormCliente
         Me.txtCi.Location = New System.Drawing.Point(444, 55)
         Me.txtCi.Name = "txtCi"
         Me.txtCi.Size = New System.Drawing.Size(200, 29)
-        Me.txtCi.TabIndex = 2
+        Me.txtCi.TabIndex = 5
         '
         'txtNombre
         '
         Me.txtNombre.Location = New System.Drawing.Point(143, 91)
         Me.txtNombre.Name = "txtNombre"
         Me.txtNombre.Size = New System.Drawing.Size(200, 29)
-        Me.txtNombre.TabIndex = 3
+        Me.txtNombre.TabIndex = 2
         '
         'txtSexo
         '
         Me.txtSexo.Location = New System.Drawing.Point(444, 91)
         Me.txtSexo.Name = "txtSexo"
         Me.txtSexo.Size = New System.Drawing.Size(200, 29)
-        Me.txtSexo.TabIndex = 4
+        Me.txtSexo.TabIndex = 6
         '
         'txtEmail
         '
         Me.txtEmail.Location = New System.Drawing.Point(444, 126)
         Me.txtEmail.Name = "txtEmail"
         Me.txtEmail.Size = New System.Drawing.Size(200, 29)
-        Me.txtEmail.TabIndex = 5
+        Me.txtEmail.TabIndex = 7
         '
         'txtTelefono
         '
         Me.txtTelefono.Location = New System.Drawing.Point(444, 161)
         Me.txtTelefono.Name = "txtTelefono"
         Me.txtTelefono.Size = New System.Drawing.Size(200, 29)
-        Me.txtTelefono.TabIndex = 6
+        Me.txtTelefono.TabIndex = 8
         '
         'Label2
         '
@@ -110,7 +111,7 @@ Partial Class FormCliente
         Me.Label2.Location = New System.Drawing.Point(92, 62)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(45, 22)
-        Me.Label2.TabIndex = 7
+        Me.Label2.TabIndex = 0
         Me.Label2.Text = "Nro:"
         '
         'Label3
@@ -119,7 +120,7 @@ Partial Class FormCliente
         Me.Label3.Location = New System.Drawing.Point(370, 62)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(68, 22)
-        Me.Label3.TabIndex = 8
+        Me.Label3.TabIndex = 0
         Me.Label3.Text = "Nro Ci."
         '
         'Label4
@@ -128,7 +129,7 @@ Partial Class FormCliente
         Me.Label4.Location = New System.Drawing.Point(54, 98)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(83, 22)
-        Me.Label4.TabIndex = 9
+        Me.Label4.TabIndex = 0
         Me.Label4.Text = "Nombre:"
         '
         'Label5
@@ -137,7 +138,7 @@ Partial Class FormCliente
         Me.Label5.Location = New System.Drawing.Point(376, 98)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(59, 22)
-        Me.Label5.TabIndex = 10
+        Me.Label5.TabIndex = 0
         Me.Label5.Text = "Sexo:"
         '
         'Label6
@@ -146,7 +147,7 @@ Partial Class FormCliente
         Me.Label6.Location = New System.Drawing.Point(349, 168)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(89, 22)
-        Me.Label6.TabIndex = 11
+        Me.Label6.TabIndex = 0
         Me.Label6.Text = "Telefono:"
         '
         'Label7
@@ -155,7 +156,7 @@ Partial Class FormCliente
         Me.Label7.Location = New System.Drawing.Point(376, 133)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(62, 22)
-        Me.Label7.TabIndex = 12
+        Me.Label7.TabIndex = 0
         Me.Label7.Text = "Email:"
         '
         'btnBuscar
@@ -172,7 +173,7 @@ Partial Class FormCliente
         Me.btnNuevo.Location = New System.Drawing.Point(226, 207)
         Me.btnNuevo.Name = "btnNuevo"
         Me.btnNuevo.Size = New System.Drawing.Size(209, 32)
-        Me.btnNuevo.TabIndex = 14
+        Me.btnNuevo.TabIndex = 10
         Me.btnNuevo.Text = "Nuevo"
         Me.btnNuevo.UseVisualStyleBackColor = True
         '
@@ -201,6 +202,7 @@ Partial Class FormCliente
         Me.dgvListado.Location = New System.Drawing.Point(26, 289)
         Me.dgvListado.Name = "dgvListado"
         Me.dgvListado.ReadOnly = True
+        Me.dgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvListado.Size = New System.Drawing.Size(842, 183)
         Me.dgvListado.TabIndex = 17
         '
@@ -210,7 +212,7 @@ Partial Class FormCliente
         Me.Label8.Location = New System.Drawing.Point(22, 133)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(115, 22)
-        Me.Label8.TabIndex = 18
+        Me.Label8.TabIndex = 0
         Me.Label8.Text = "Ap. Paterno:"
         '
         'txtAPaterno
@@ -218,14 +220,14 @@ Partial Class FormCliente
         Me.txtAPaterno.Location = New System.Drawing.Point(143, 126)
         Me.txtAPaterno.Name = "txtAPaterno"
         Me.txtAPaterno.Size = New System.Drawing.Size(200, 29)
-        Me.txtAPaterno.TabIndex = 19
+        Me.txtAPaterno.TabIndex = 3
         '
         'txtAMaterno
         '
         Me.txtAMaterno.Location = New System.Drawing.Point(143, 161)
         Me.txtAMaterno.Name = "txtAMaterno"
         Me.txtAMaterno.Size = New System.Drawing.Size(200, 29)
-        Me.txtAMaterno.TabIndex = 21
+        Me.txtAMaterno.TabIndex = 4
         '
         'Label9
         '
@@ -233,7 +235,7 @@ Partial Class FormCliente
         Me.Label9.Location = New System.Drawing.Point(20, 168)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(117, 22)
-        Me.Label9.TabIndex = 20
+        Me.Label9.TabIndex = 0
         Me.Label9.Text = "Ap. Materno:"
         '
         'btnMostrar
@@ -259,7 +261,7 @@ Partial Class FormCliente
         Me.btnGuardar.Location = New System.Drawing.Point(26, 208)
         Me.btnGuardar.Name = "btnGuardar"
         Me.btnGuardar.Size = New System.Drawing.Size(189, 30)
-        Me.btnGuardar.TabIndex = 26
+        Me.btnGuardar.TabIndex = 9
         Me.btnGuardar.Text = "Guardar"
         Me.btnGuardar.UseVisualStyleBackColor = True
         '
@@ -282,11 +284,22 @@ Partial Class FormCliente
         Me.btnModificarn.UseVisualStyleBackColor = True
         Me.btnModificarn.Visible = False
         '
+        'btnAgrgarPedido
+        '
+        Me.btnAgrgarPedido.Location = New System.Drawing.Point(444, 4)
+        Me.btnAgrgarPedido.Name = "btnAgrgarPedido"
+        Me.btnAgrgarPedido.Size = New System.Drawing.Size(200, 32)
+        Me.btnAgrgarPedido.TabIndex = 29
+        Me.btnAgrgarPedido.Text = "Agregar pedido"
+        Me.btnAgrgarPedido.UseVisualStyleBackColor = True
+        Me.btnAgrgarPedido.Visible = False
+        '
         'FormCliente
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 22.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(884, 527)
+        Me.Controls.Add(Me.btnAgrgarPedido)
         Me.Controls.Add(Me.btnModificarn)
         Me.Controls.Add(Me.btnCanselar)
         Me.Controls.Add(Me.btnGuardar)
@@ -352,4 +365,5 @@ Partial Class FormCliente
     Friend WithEvents btnGuardar As Button
     Friend WithEvents btnCanselar As Button
     Friend WithEvents btnModificarn As Button
+    Friend WithEvents btnAgrgarPedido As Button
 End Class

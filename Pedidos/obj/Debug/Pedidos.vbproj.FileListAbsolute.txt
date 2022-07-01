@@ -38,3 +38,4 @@ E:\3er año\Base de DATOS 2\Pedidos\Pedidos\obj\Debug\Pedidos.FormPedido.resourc
 E:\3er año\Base de DATOS 2\Pedidos\Pedidos\obj\Debug\Pedidos.FormProducto.resources
 E:\3er año\Base de DATOS 2\Pedidos\Pedidos\obj\Debug\Pedidos.Resources.resources
 E:\3er año\Base de DATOS 2\Pedidos\Pedidos\obj\Debug\Pedidos.vbproj.GenerateResource.Cache
+E:\3er año\Base de DATOS 2\Pedidos\Pedidos\obj\Debug\Pedidos.FormMenu.resources

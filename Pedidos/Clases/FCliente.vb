@@ -48,7 +48,7 @@ Public Class FCliente
         End Try
     End Function
 
-    Public Function Eliminar(ByVal ci As String) As DataTable
+    Public Function Eliminar(ByVal ci As String) As Boolean
         Try
             conectado()
             cmd = New SqlCommand("BorrarCliente")
@@ -56,17 +56,14 @@ Public Class FCliente
             cmd.Connection = cnn
             cmd.Parameters.AddWithValue("@Nro_Ci", ci)
             If cmd.ExecuteNonQuery Then
-                Dim dt As New DataTable
-                Dim da As New SqlDataAdapter(cmd)
-                da.Fill(dt)
-                Return dt
+                Return True
             Else
-                Return Nothing
+                Return False
             End If
 
         Catch ex As Exception
             MsgBox(ex.Message)
-            Return Nothing
+            Return False
         Finally
             desconectado()
         End Try
@@ -98,4 +95,32 @@ Public Class FCliente
             desconectado()
         End Try
     End Function
+
+    Public Function actualizar(ByVal num As Integer, ByVal nit As String, ByVal nom As String, ByVal apMa As String, ByVal apPa As String, ByVal sex As String, ByVal ema As String, ByVal tel As String) As Boolean
+        Try
+            conectado()
+            cmd = New SqlCommand("ActualizarCliente")
+            cmd.CommandType = CommandType.StoredProcedure
+            cmd.Connection = cnn
+            cmd.Parameters.AddWithValue("@nro", num)
+            cmd.Parameters.AddWithValue("@ci", nit)
+            cmd.Parameters.AddWithValue("@nom", nom)
+            cmd.Parameters.AddWithValue("@apPa", apPa)
+            cmd.Parameters.AddWithValue("@apMa", apMa)
+            cmd.Parameters.AddWithValue("@sex", sex)
+            cmd.Parameters.AddWithValue("@ema", ema)
+            cmd.Parameters.AddWithValue("@tel", tel)
+            If cmd.ExecuteNonQuery Then
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            MsgBox(ex.Message)
+            Return False
+        Finally
+            desconectado()
+        End Try
+    End Function
+
 End Class
