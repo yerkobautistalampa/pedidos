@@ -47,16 +47,22 @@ Partial Class FormProducto
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(187, 9)
+        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label1.Location = New System.Drawing.Point(149, 0)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(173, 22)
+        Me.Label1.Size = New System.Drawing.Size(313, 37)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Datos del Producto"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(24, 57)
+        Me.Label2.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label2.Location = New System.Drawing.Point(80, 52)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(138, 22)
         Me.Label2.TabIndex = 1
@@ -65,7 +71,10 @@ Partial Class FormProducto
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(-3, 99)
+        Me.Label3.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label3.Location = New System.Drawing.Point(53, 80)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(165, 22)
         Me.Label3.TabIndex = 2
@@ -74,7 +83,10 @@ Partial Class FormProducto
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(373, 68)
+        Me.Label4.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label4.Location = New System.Drawing.Point(152, 105)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(70, 22)
         Me.Label4.TabIndex = 3
@@ -83,7 +95,10 @@ Partial Class FormProducto
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(390, 107)
+        Me.Label5.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.Label5.Location = New System.Drawing.Point(165, 136)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(53, 22)
         Me.Label5.TabIndex = 4
@@ -91,131 +106,220 @@ Partial Class FormProducto
         '
         'txtCodProducto
         '
-        Me.txtCodProducto.Location = New System.Drawing.Point(168, 58)
+        Me.txtCodProducto.Location = New System.Drawing.Point(222, 49)
+        Me.txtCodProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.txtCodProducto.Name = "txtCodProducto"
-        Me.txtCodProducto.Size = New System.Drawing.Size(185, 29)
+        Me.txtCodProducto.Size = New System.Drawing.Size(136, 25)
         Me.txtCodProducto.TabIndex = 5
         '
         'txtNombreProducto
         '
-        Me.txtNombreProducto.Location = New System.Drawing.Point(168, 96)
+        Me.txtNombreProducto.Location = New System.Drawing.Point(222, 77)
+        Me.txtNombreProducto.Margin = New System.Windows.Forms.Padding(2)
         Me.txtNombreProducto.Name = "txtNombreProducto"
-        Me.txtNombreProducto.Size = New System.Drawing.Size(185, 29)
+        Me.txtNombreProducto.Size = New System.Drawing.Size(136, 25)
         Me.txtNombreProducto.TabIndex = 6
         '
         'txtPrecio
         '
-        Me.txtPrecio.Location = New System.Drawing.Point(449, 61)
+        Me.txtPrecio.Location = New System.Drawing.Point(222, 106)
+        Me.txtPrecio.Margin = New System.Windows.Forms.Padding(2)
         Me.txtPrecio.Name = "txtPrecio"
-        Me.txtPrecio.Size = New System.Drawing.Size(179, 29)
+        Me.txtPrecio.Size = New System.Drawing.Size(136, 25)
         Me.txtPrecio.TabIndex = 7
         '
         'txtStok
         '
-        Me.txtStok.Location = New System.Drawing.Point(449, 100)
+        Me.txtStok.Location = New System.Drawing.Point(222, 133)
+        Me.txtStok.Margin = New System.Windows.Forms.Padding(2)
         Me.txtStok.Name = "txtStok"
-        Me.txtStok.Size = New System.Drawing.Size(179, 29)
+        Me.txtStok.Size = New System.Drawing.Size(136, 25)
         Me.txtStok.TabIndex = 8
         '
         'btnEliminar
         '
-        Me.btnEliminar.Location = New System.Drawing.Point(422, 197)
+        Me.btnEliminar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnEliminar.FlatAppearance.BorderSize = 0
+        Me.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnEliminar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnEliminar.Location = New System.Drawing.Point(471, 102)
+        Me.btnEliminar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnEliminar.Name = "btnEliminar"
-        Me.btnEliminar.Size = New System.Drawing.Size(191, 30)
+        Me.btnEliminar.Size = New System.Drawing.Size(91, 23)
         Me.btnEliminar.TabIndex = 21
         Me.btnEliminar.Text = "Eliminar"
-        Me.btnEliminar.UseVisualStyleBackColor = True
+        Me.btnEliminar.UseVisualStyleBackColor = False
         '
         'btnNuevo
         '
-        Me.btnNuevo.Location = New System.Drawing.Point(225, 161)
+        Me.btnNuevo.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnNuevo.FlatAppearance.BorderSize = 0
+        Me.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnNuevo.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnNuevo.Location = New System.Drawing.Point(370, 77)
+        Me.btnNuevo.Margin = New System.Windows.Forms.Padding(0)
         Me.btnNuevo.Name = "btnNuevo"
-        Me.btnNuevo.Size = New System.Drawing.Size(191, 30)
+        Me.btnNuevo.Size = New System.Drawing.Size(91, 23)
         Me.btnNuevo.TabIndex = 20
         Me.btnNuevo.Text = "Nuevo"
-        Me.btnNuevo.UseVisualStyleBackColor = True
+        Me.btnNuevo.UseVisualStyleBackColor = False
         '
         'btnModificar
         '
-        Me.btnModificar.Location = New System.Drawing.Point(422, 161)
+        Me.btnModificar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnModificar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnModificar.FlatAppearance.BorderSize = 0
+        Me.btnModificar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnModificar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnModificar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnModificar.Location = New System.Drawing.Point(471, 50)
+        Me.btnModificar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnModificar.Name = "btnModificar"
-        Me.btnModificar.Size = New System.Drawing.Size(191, 30)
+        Me.btnModificar.Size = New System.Drawing.Size(91, 23)
         Me.btnModificar.TabIndex = 19
         Me.btnModificar.Text = "Modificar"
-        Me.btnModificar.UseVisualStyleBackColor = True
+        Me.btnModificar.UseVisualStyleBackColor = False
         '
         'btnBuscar
         '
-        Me.btnBuscar.Location = New System.Drawing.Point(225, 196)
+        Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnBuscar.FlatAppearance.BorderSize = 0
+        Me.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnBuscar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnBuscar.Location = New System.Drawing.Point(471, 76)
+        Me.btnBuscar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnBuscar.Name = "btnBuscar"
-        Me.btnBuscar.Size = New System.Drawing.Size(191, 30)
+        Me.btnBuscar.Size = New System.Drawing.Size(91, 23)
         Me.btnBuscar.TabIndex = 18
         Me.btnBuscar.Text = "Buscar"
-        Me.btnBuscar.UseVisualStyleBackColor = True
+        Me.btnBuscar.UseVisualStyleBackColor = False
         '
         'dgvListado
         '
         Me.dgvListado.AllowUserToAddRows = False
         Me.dgvListado.AllowUserToDeleteRows = False
+        Me.dgvListado.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
         Me.dgvListado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvListado.Location = New System.Drawing.Point(76, 232)
+        Me.dgvListado.GridColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.dgvListado.Location = New System.Drawing.Point(70, 162)
+        Me.dgvListado.Margin = New System.Windows.Forms.Padding(2)
         Me.dgvListado.Name = "dgvListado"
         Me.dgvListado.ReadOnly = True
         Me.dgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvListado.Size = New System.Drawing.Size(484, 195)
+        Me.dgvListado.Size = New System.Drawing.Size(493, 202)
         Me.dgvListado.TabIndex = 22
         '
         'btnCerrar
         '
-        Me.btnCerrar.Location = New System.Drawing.Point(369, 433)
+        Me.btnCerrar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnCerrar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCerrar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnCerrar.FlatAppearance.BorderSize = 0
+        Me.btnCerrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnCerrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnCerrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCerrar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCerrar.Location = New System.Drawing.Point(423, 373)
+        Me.btnCerrar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnCerrar.Name = "btnCerrar"
-        Me.btnCerrar.Size = New System.Drawing.Size(191, 30)
+        Me.btnCerrar.Size = New System.Drawing.Size(139, 23)
         Me.btnCerrar.TabIndex = 24
         Me.btnCerrar.Text = "Cerrar"
-        Me.btnCerrar.UseVisualStyleBackColor = True
+        Me.btnCerrar.UseVisualStyleBackColor = False
         '
         'btnMostar
         '
-        Me.btnMostar.Location = New System.Drawing.Point(76, 433)
+        Me.btnMostar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnMostar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnMostar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnMostar.FlatAppearance.BorderSize = 0
+        Me.btnMostar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnMostar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnMostar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnMostar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnMostar.Location = New System.Drawing.Point(117, 371)
+        Me.btnMostar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnMostar.Name = "btnMostar"
-        Me.btnMostar.Size = New System.Drawing.Size(191, 30)
+        Me.btnMostar.Size = New System.Drawing.Size(139, 23)
         Me.btnMostar.TabIndex = 23
         Me.btnMostar.Text = "Mostar"
-        Me.btnMostar.UseVisualStyleBackColor = True
+        Me.btnMostar.UseVisualStyleBackColor = False
         '
         'btnGuardar
         '
-        Me.btnGuardar.Location = New System.Drawing.Point(28, 161)
+        Me.btnGuardar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnGuardar.FlatAppearance.BorderSize = 0
+        Me.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnGuardar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnGuardar.Location = New System.Drawing.Point(370, 50)
+        Me.btnGuardar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnGuardar.Name = "btnGuardar"
-        Me.btnGuardar.Size = New System.Drawing.Size(191, 30)
+        Me.btnGuardar.Size = New System.Drawing.Size(91, 23)
         Me.btnGuardar.TabIndex = 25
         Me.btnGuardar.Text = "Guardar"
-        Me.btnGuardar.UseVisualStyleBackColor = True
+        Me.btnGuardar.UseVisualStyleBackColor = False
         '
         'btnCanselar
         '
-        Me.btnCanselar.Location = New System.Drawing.Point(28, 196)
+        Me.btnCanselar.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnCanselar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnCanselar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnCanselar.FlatAppearance.BorderSize = 0
+        Me.btnCanselar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnCanselar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnCanselar.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnCanselar.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnCanselar.Location = New System.Drawing.Point(371, 104)
+        Me.btnCanselar.Margin = New System.Windows.Forms.Padding(0)
         Me.btnCanselar.Name = "btnCanselar"
-        Me.btnCanselar.Size = New System.Drawing.Size(191, 29)
+        Me.btnCanselar.Size = New System.Drawing.Size(91, 22)
         Me.btnCanselar.TabIndex = 28
         Me.btnCanselar.Text = "Canselar"
-        Me.btnCanselar.UseVisualStyleBackColor = True
+        Me.btnCanselar.UseVisualStyleBackColor = False
         '
         'btnAgrgarPedido
         '
-        Me.btnAgrgarPedido.Location = New System.Drawing.Point(449, 7)
+        Me.btnAgrgarPedido.BackColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnAgrgarPedido.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.btnAgrgarPedido.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(37, Byte), Integer), CType(CType(46, Byte), Integer), CType(CType(59, Byte), Integer))
+        Me.btnAgrgarPedido.FlatAppearance.BorderSize = 0
+        Me.btnAgrgarPedido.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
+        Me.btnAgrgarPedido.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Gray
+        Me.btnAgrgarPedido.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.btnAgrgarPedido.ForeColor = System.Drawing.SystemColors.ControlLightLight
+        Me.btnAgrgarPedido.Location = New System.Drawing.Point(371, 131)
+        Me.btnAgrgarPedido.Margin = New System.Windows.Forms.Padding(0)
         Me.btnAgrgarPedido.Name = "btnAgrgarPedido"
-        Me.btnAgrgarPedido.Size = New System.Drawing.Size(179, 35)
+        Me.btnAgrgarPedido.Size = New System.Drawing.Size(192, 27)
         Me.btnAgrgarPedido.TabIndex = 29
         Me.btnAgrgarPedido.Text = "Agregar pedido"
-        Me.btnAgrgarPedido.UseVisualStyleBackColor = True
+        Me.btnAgrgarPedido.UseVisualStyleBackColor = False
         Me.btnAgrgarPedido.Visible = False
         '
         'FormProducto
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(11.0!, 22.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(652, 475)
+        Me.BackColor = System.Drawing.Color.DarkRed
+        Me.ClientSize = New System.Drawing.Size(627, 405)
         Me.Controls.Add(Me.btnAgrgarPedido)
         Me.Controls.Add(Me.btnCanselar)
         Me.Controls.Add(Me.btnGuardar)
@@ -235,8 +339,9 @@ Partial Class FormProducto
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
-        Me.Font = New System.Drawing.Font("Arial", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(6, 5, 6, 5)
+        Me.Font = New System.Drawing.Font("Arial", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "FormProducto"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "FormProducto"

@@ -111,7 +111,7 @@ Public Class FormCliente
         If txtNro.Text <> "" And txtCi.Text <> "" And txtNombre.Text <> "" And txtAPaterno.Text <> "" And txtAMaterno.Text <> "" And txtEmail.Text <> "" And txtSexo.Text <> "" And txtTelefono.Text <> "" Then
             Try
                 Dim fun As New FCliente
-                If fun.actualizar(txtNro.Text, txtCi.Text, txtNombre.Text, txtAPaterno.Text, txtAMaterno.Text, txtSexo.Text, txtTelefono.Text, txtEmail.Text) Then
+                If fun.actualizar(txtNro.Text, txtCi.Text, txtNombre.Text, txtAPaterno.Text, txtAMaterno.Text, txtSexo.Text, txtEmail.Text, txtTelefono.Text) Then
                     MessageBox.Show("se actualizo correctamente", "actualizando registro", MessageBoxButtons.OK, MessageBoxIcon.Information)
                     Listado()
                 Else
@@ -141,7 +141,7 @@ Public Class FormCliente
     End Sub
 
     Private Sub FormCliente_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Listado()
     End Sub
     Private Sub btnModificarn_Click(sender As Object, e As EventArgs) Handles btnModificarn.Click
 
@@ -159,5 +159,9 @@ Public Class FormCliente
         FormPedido.txtNroCliente.Text = txtNro.Text
         btnAgrgarPedido.Visible = Visible
         Close()
+    End Sub
+
+    Private Sub btnReporte_Click(sender As Object, e As EventArgs) Handles btnReporte.Click
+        FormListaCliente.Show()
     End Sub
 End Class

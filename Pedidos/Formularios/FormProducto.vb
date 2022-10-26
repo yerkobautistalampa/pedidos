@@ -1,4 +1,7 @@
-﻿Public Class FormProducto
+﻿Imports System.Data.SqlClient
+Imports System.Data.OleDb
+
+Public Class FormProducto
     Private dt As New DataTable
     Private Sub btnMostar_Click(sender As Object, e As EventArgs) Handles btnMostar.Click
         Listado()
@@ -146,5 +149,9 @@
         FormPedido.txtCodProducto.Text = txtCodProducto.Text
         btnAgrgarPedido.Visible = Visible
         Close()
+    End Sub
+
+    Private Sub FormProducto_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Listado()
     End Sub
 End Class

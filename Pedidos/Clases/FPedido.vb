@@ -23,7 +23,6 @@ Public Class FPedido
             desconectado()
         End Try
     End Function
-
     Public Function Insertar(ByVal Nro_pedido As Integer, ByVal Nro_cliente As Integer, ByVal Cod_producto As String, ByVal Cantidad As Integer, ByVal Fecha_pedido As Date) As Boolean
         Try
             conectado()
@@ -35,7 +34,6 @@ Public Class FPedido
             cmd.Parameters.AddWithValue("@Cod_producto", Cod_producto)
             cmd.Parameters.AddWithValue("@Cantidad", Cantidad)
             cmd.Parameters.AddWithValue("@Fecha_pedido", Fecha_pedido)
-
             If cmd.ExecuteNonQuery Then
                 Return True
             Else
@@ -48,7 +46,6 @@ Public Class FPedido
             desconectado()
         End Try
     End Function
-
     Public Function Buscar(ByVal Nro_pedido As Integer) As DataTable
         Try
             conectado()
@@ -72,7 +69,6 @@ Public Class FPedido
             desconectado()
         End Try
     End Function
-
     Public Function Eliminar(ByVal Nro_pedido As Integer) As Boolean
         Try
             conectado()
@@ -93,7 +89,6 @@ Public Class FPedido
             desconectado()
         End Try
     End Function
-
     Public Function actualizar(ByVal Nro_pedido As Integer, ByVal Nro_cliente As Integer, ByVal Cod_producto As String, ByVal Cantidad As Integer, ByVal Fecha_pedido As Date) As Boolean
         Try
             conectado()

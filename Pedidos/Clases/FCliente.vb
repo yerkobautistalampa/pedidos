@@ -95,7 +95,6 @@ Public Class FCliente
             desconectado()
         End Try
     End Function
-
     Public Function actualizar(ByVal num As Integer, ByVal nit As String, ByVal nom As String, ByVal apMa As String, ByVal apPa As String, ByVal sex As String, ByVal ema As String, ByVal tel As String) As Boolean
         Try
             conectado()

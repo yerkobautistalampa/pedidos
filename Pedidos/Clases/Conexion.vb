@@ -3,6 +3,7 @@ Public Class Conexion
     Protected cnn As New SqlConnection
     Protected Function conectado() As Boolean
         Try
+            'cnn = New SqlConnection("Data Source=192.168.1.1;Initial Catalog=PEDIDOS;User Id=sa;Password=12345")
             cnn = New SqlConnection("Data Source=(local);Initial Catalog=PEDIDOS;Integrated Security=True")
             cnn.Open()
             Return True

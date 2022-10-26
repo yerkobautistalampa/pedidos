@@ -22,5 +22,425 @@ Pedidos
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="T:Pedidos.PEDIDOSDataSet">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.MostrarClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.MostrarClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet.MostrarClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSetTableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSetTableAdapters.MostrarClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(Pedidos.PEDIDOSDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(Pedidos.PEDIDOSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(Pedidos.PEDIDOSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.UpdateAll(Pedidos.PEDIDOSDataSet)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.ProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.MostrarProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.ProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.MostrarProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.ProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1.MostrarProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1TableAdapters.ProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1TableAdapters.MostrarProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.UpdateUpdatedRows(Pedidos.PEDIDOSDataSet1,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.UpdateInsertedRows(Pedidos.PEDIDOSDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.UpdateDeletedRows(Pedidos.PEDIDOSDataSet1,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.UpdateAll(Pedidos.PEDIDOSDataSet1)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet1TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.PedidoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.MostrarPedidoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.PedidoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.MostrarPedidoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.PedidoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2.MostrarPedidoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2TableAdapters.PedidoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2TableAdapters.MostrarPedidoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.UpdateUpdatedRows(Pedidos.PEDIDOSDataSet2,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.UpdateInsertedRows(Pedidos.PEDIDOSDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.UpdateDeletedRows(Pedidos.PEDIDOSDataSet2,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.UpdateAll(Pedidos.PEDIDOSDataSet2)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet2TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ClienteDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.PedidoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ProductoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_action_mapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_event_mapDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.mostrarDetallePedidoDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ClienteRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.PedidoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ProductoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_action_mapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_event_mapRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.mostrarDetallePedidoRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ClienteRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.PedidoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.ProductoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_action_mapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.trace_xe_event_mapRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3.mostrarDetallePedidoRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.ClienteTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.PedidoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.ProductoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.trace_xe_action_mapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.trace_xe_event_mapTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.mostrarDetallePedidoTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.UpdateUpdatedRows(Pedidos.PEDIDOSDataSet3,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.UpdateInsertedRows(Pedidos.PEDIDOSDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.UpdateDeletedRows(Pedidos.PEDIDOSDataSet3,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.UpdateAll(Pedidos.PEDIDOSDataSet3)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:Pedidos.PEDIDOSDataSet3TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
 </members>
 </doc>

@@ -112,9 +112,9 @@
         Try
             txtNroPedido.Text = dgvListado.SelectedCells.Item(0).Value
             txtNroCliente.Text = dgvListado.SelectedCells.Item(1).Value
-            txtCodProducto.Text = dgvListado.SelectedCells.Item(2).Value
-            txtCantidad.Text = dgvListado.SelectedCells.Item(3).Value
-            dtpFechaPedido.Text = dgvListado.SelectedCells.Item(4).Value
+            txtCodProducto.Text = dgvListado.SelectedCells.Item(4).Value
+            txtCantidad.Text = dgvListado.SelectedCells.Item(6).Value
+            dtpFechaPedido.Text = dgvListado.SelectedCells.Item(7).Value
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
@@ -152,5 +152,18 @@
     Private Sub btnFormProductyo_Click(sender As Object, e As EventArgs) Handles btnFormProductyo.Click
         FormProducto.Show()
         FormProducto.btnAgrgarPedido.Visible = True
+    End Sub
+
+    Private Sub FormPedido_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Listado()
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+    End Sub
+
+    Private Sub btnFactura_Click(sender As Object, e As EventArgs) Handles btnFactura.Click
+        FormMostrarDetallePedido.txtNumPedido.Text = txtNroPedido.Text
+        FormMostrarDetallePedido.ShowDialog()
+
     End Sub
 End Class
